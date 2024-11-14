@@ -9,7 +9,7 @@
     <h1>Welcome to My WASM Game1</h1>
     <script>
         // 从 GitHub Pages 上加载 WASM 文件
-        fetch('https://always-progressing.github.io/blob/main/assets/game.wasm')  // 请替换成你实际的 URL
+        fetch('https://always-progressing.github.io/assets/game.wasm')  // 请替换成你实际的 URL
             .then(response => response.arrayBuffer())  // 将其转换为二进制
             .then(bytes => WebAssembly.instantiate(bytes))  // 实例化 WebAssembly 模块
             .then(module => {
